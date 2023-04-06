@@ -26,7 +26,7 @@
                 </div>
             </div>
         
-         <div class="container shadow bg-light rounded">   
+         <div class="container shadow bg-light rounded border ">   
         <form method="POST" action="/store">
             @csrf
             <div class="mb-3">
