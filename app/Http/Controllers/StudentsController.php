@@ -78,7 +78,9 @@ class StudentsController extends Controller
         $students->dob=$request->get('dob');
 
         $students->save();
+        
         return redirect('show');
+        
     }
 
     /**

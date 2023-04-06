@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Add Students</title>
+  <title>Edit Students</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,11 +26,11 @@
                 </div>
             </div>
         
-            
+        <div class="container shadow bg-light rounded">    
         <form method="POST" action="/update/{{$students->id}}">
             @csrf
             <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Name</label>
+            <label for="exampleInputEmail1" class="form-label mt-3">Name</label>
             <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$students->name}}">
             
             </div>
@@ -55,8 +55,9 @@
                 <input type="date" name="dob" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$students->dob}}">
             </div>
         
-            <button type="submit" name="update" class="btn btn-success btn-lg">Update</button>
+            <button type="submit" name="update" class="btn btn-success form-control mb-3">Update</button>
         </form>
+        </div>
         </div>
     </div>
 </body>

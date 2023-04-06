@@ -26,11 +26,11 @@
                 </div>
             </div>
         
-            
+         <div class="container shadow bg-light rounded">   
         <form method="POST" action="/store">
             @csrf
             <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Name</label>
+            <label for="exampleInputEmail1" class="form-label mt-3">Name</label>
             <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
 
@@ -54,8 +54,9 @@
                 <input type="date" name="dob" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
         
-            <button type="submit" name="insert" class="btn btn-primary btn-lg">Insert</button>
+            <button type="submit" name="insert" class="btn btn-primary form-control mb-3">Insert</button>
         </form>
+         </div>
         </div>
     </div>
 </body>
